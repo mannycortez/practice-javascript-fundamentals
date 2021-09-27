@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>   
+    <title>Document</title> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      
 </head>
 
 <body>
-    <h1> Functions </h1>
-    <ul class = "people"></ul>
-    <script src = "arrayMethods.js"></script> 
+    <h1>Heading One</h1>
+    <h1>Heading Two</h1>
+
+    <h2>Heading Three</h2>
+    <h2>Heading Four</h2>
+
+    <p>a paragraph of text</p>
+
+  
+  <input type="text" id="theInput" />
+  <button id='theButton'>Show what I wrote</button>
+
+    <script>
+        $("#theButton").click(function() {
+            var textInputted = $("#theInput").val();
+            alert(textInputted);
+        });
+    </script>
+    
 </body>
 
 </html>

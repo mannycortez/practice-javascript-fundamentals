@@ -26,7 +26,13 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //     console.log(company.name);
 // });
 
-// 'filter method'
+
+
+// 'THE FILTER METHOD IN 3 WAYS'
+
+
+
+// BASIC 'FOR LOOP' (ok)
 
 // let canDrink = [];
 // for(let i = 0; i < ages.length; i++) {
@@ -36,13 +42,31 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // }
 // console.log(canDrink);
 
-const canDrink = ages.filter(function(age) {
-    if(age >= 21) {
-        return true;
-    }
-})
-console.log(canDrink);
+// FILTER METHOD AS REGULAR FUNCTION (good)
+
+// const canDrink = ages.filter(function(age) {
+//     if(age >= 21) {
+//         return true;
+//     }
+// })
+// console.log(canDrink);
+
+// FILTER METHOD WITH AN ARROW FUNCTION (better)
+
+// const canDrink = ages.filter(age => age >= 21);
+// console.log(canDrink);
+
 
 // map
+// CREATE ARRAY OF COMPANY NAMES
+// .map method as a regular function:
+// const companyNames = companies.map(function(company) {
+//     return company.name;
+// });
+// console.log(companyNames);
+
+// .map method with an arrow function:
+    const testMap = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+    console.log(testMap);
 // sort
 // reduce
